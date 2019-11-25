@@ -1,6 +1,18 @@
-<h1><%= @question %></h1>
-<h1><%= @answer %></h1>
-<%= link_to 'Go back', "/ask" %>
+
+<div class='container'>
+  <h1>Stupid Coaching</h1>
+  <div class='card'>
+    <h2><%= @question %></h2>
+    <p>-You</p>
+  </div>
+  <div class='card'>
+    <h2 id="answer"><%= @answer %></h2>
+    <p>-Your Coach</p>
+  </div>
+
+  <%= link_to 'Go back', "/ask" %>
+</div>
+
 
 
 
